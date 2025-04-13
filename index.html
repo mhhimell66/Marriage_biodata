@@ -6,13 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    <style>
+    :root {
+      --bg-color: #f7f9fb;
+      --card-color: #ffffff;
+      --text-color: #2c3e50;
+      --heading-color: #1b5e20;
+      --border-color: #a5d6a7;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --card-color: #1e1e1e;
+      --text-color: #f1f1f1;
+      --heading-color: #81c784;
+      --border-color: #4caf50;
+    }
+
     body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
       font-family: 'Quicksand', sans-serif;
-      background-color: #f7f9fb;
-      color: #2c3e50;
       padding: 30px;
       margin: 0;
+      transition: background-color 0.4s, color 0.4s;
     }
+
 
     .card {
       background: #ffffff;
@@ -74,6 +93,20 @@
       font-weight: 700;
       color: #1b5e20;
     }
+.toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--border-color);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 999;
+      transition: background 0.3s;
+    }
 
     @media (max-width: 600px) {
       .card {
@@ -98,6 +131,9 @@
   </style>
 </head>
 <body>
+  <!-- Toggle Button -->
+  <button class="toggle-btn" onclick="toggleMode()">Dark/Light Mode</button>
+  
   <div class="card">
    <!-- <div align="center"><img src="himel.jpg" alt="Md. Mehedi Hasan Himel" class="profile-pic"></div> -->
     <h1>Md. Mehedi Hasan Himel</h1>

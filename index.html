@@ -1,250 +1,1067 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Marriage Bio-Data - Md. Mehedi Hasan Himel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #f7f9fb;
-      --card-color: #ffffff;
-      --text-color: #2c3e50;
-      --heading-color: #1b5e20;
-      --border-color: #a5d6a7;
-    }
-
-    body.dark-mode {
-      --bg-color: #121212;
-      --card-color: #1e1e1e;
-      --text-color: #f1f1f1;
-      --heading-color: #FFFFFF;
-      --border-color: #4caf50;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: 'Quicksand', sans-serif;
-      padding: 30px;
-      margin: 0;
-      transition: background-color 0.4s, color 0.4s;
-    }
-
-    .card {
-      background: var(--card-color);
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      transition: background 0.4s;
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--border-color);
-      display: block;
-      margin: 0 auto 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: var(--heading-color);
-      margin-bottom: 10px;
-      font-size: 2rem;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 40px;
-      padding-bottom: 6px;
-      border-bottom: 3px solid var(--border-color);
-      background: linear-gradient(to right, #c8e6c9, transparent);
-      color: var(--heading-color);
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-top: 10px;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    .section {
-      margin-bottom: 25px;
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-style: italic;
-      color: var(--text-color);
-      text-align: center;
-    }
-
-    strong {
-      font-weight: 700;
-      color: var(--heading-color);
-    }
-
-    .toggle-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--border-color);
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: bold;
-      z-index: 999;
-      transition: background 0.3s;
-    }
-
-    @media (max-width: 600px) {
-      .card {
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      h2 {
-        font-size: 1.2rem;
-      }
-
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Mehedi Hasan Himel | Electrical Engineer</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            animation: fadeIn 2s ease;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .skills {
+            margin-top: 30px;
+        }
+        
+        .skill-item {
+            margin-bottom: 20px;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            border-radius: 5px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-img img {
+            transform: scale(1.1);
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .project-info h3 {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .project-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .project-tag {
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .contact-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contact-icon {
+            font-size: 40px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .contact-card p {
+            color: #666;
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+        
+        .footer-col p {
+            margin-bottom: 15px;
+            color: #bbb;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bbb;
+            font-size: 14px;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+        }
+        
+        /* Page-specific styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        .breadcrumb li {
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .breadcrumb li:not(:last-child)::after {
+            content: '/';
+            position: absolute;
+            right: -12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--accent);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--secondary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 3px solid var(--secondary);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -10px;
+        }
+        
+        .right::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content p {
+            color: #666;
+        }
+        
+        .timeline-date {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .left::after, .right::after {
+                left: 21px;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+        
+        .language-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        
+        .language-table th, .language-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .language-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .language-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .language-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .rating {
+            color: var(--accent);
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
- <button class="toggle-btn" onclick="toggleMode()">Dark/Light Mode</button>
- 
-  <div class="card">
-   <!-- <div align="center"><img src="himel.jpg" alt="Md. Mehedi Hasan Himel" class="profile-pic"></div> -->
-    <h1>Md. Mehedi Hasan Himel</h1>
-    <p style="text-align:center;"><strong>Assistant Engineer (Electrical)</strong>,<br>Jalalabad Gas Transmission & Distribution System Ltd. (JGTDSL),<br>Sylhet, Bangladesh.</p>
+    <!-- Homepage -->
+    <div id="home">
+        <header>
+            <nav class="container">
+                <a href="#home" class="logo">Himel<span>.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="section">
-      <h2>Personal Details</h2>
-      <p><strong>Full Name:</strong> Md. Mehedi Hasan Himel</p>
-      <p><strong>Age:</strong> 27 years</p>
-      <p><strong>Date of Birth:</strong> November 10, 1997</p>
-      <p><strong>Height:</strong> 5’10”</p>
-      <p><strong>Weight:</strong> 72 kg</p>
-      <p><strong>Religion:</strong> Islam</p>
-      <p><strong>Blood Group:</strong> A+</p>
-      <p><strong>Marital Status:</strong> Unmarried</p>
-      <p class="center-align"><strong>Permanent Address:</strong> College More, Nageshwari, Kurigram</p>
-      <p class="center-align"><strong>Present Address:</strong> Sylhet, Bangladesh</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Md. Mehedi Hasan Himel</h1>
+                <p>Electrical & Electronic Engineer | Power Systems Specialist | Renewable Energy Enthusiast</p>
+                <a href="#about" class="btn">Explore More</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mehedi Hasan Himel">
+                    </div>
+                    <div class="about-text">
+                        <h3>Electrical & Electronic Engineer</h3>
+                        <p>I am a passionate Electrical & Electronic Engineer with expertise in power systems, renewable energy, and smart grid technologies. Currently working as an Assistant Engineer (Electrical) at Jalalabad Gas Transmission & Distribution System Ltd., I bring both academic knowledge and practical experience to the table.</p>
+                        <p>My career objective is to secure challenging roles where I can apply my technical skills to innovative engineering projects while contributing to organizational growth and pursuing continuous professional development.</p>
+                        
+                        <div class="skills">
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Power Systems</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Renewable Energy</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Smart Grid Technologies</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Temperature-Based Fan Control">
+                        </div>
+                        <div class="project-info">
+                            <h3>Automatic Temperature-Based Fan Speed Control System</h3>
+                            <p>An automatic temperature-based fan speed control system that regulates fan speed according to surrounding temperature.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Embedded Systems</span>
+                                <span class="project-tag">Arduino</span>
+                                <span class="project-tag">Temperature Control</span>
+                            </div>
+                            <a href="#project1" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bill Prediction System">
+                        </div>
+                        <div class="project-info">
+                            <h3>Bill Prediction & Power Factor Measuring with SMS Alert</h3>
+                            <p>A system that calculates power usage, forecasts electricity bills, and delivers information via SMS to consumers.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">IoT</span>
+                                <span class="project-tag">Energy Monitoring</span>
+                                <span class="project-tag">SMS Integration</span>
+                            </div>
+                            <a href="#project2" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Variable Frequency Drive">
+                        </div>
+                        <div class="project-info">
+                            <h3>Variable Frequency Drive for Three-phase Induction Motor</h3>
+                            <p>Designed and implemented an inverter-based variable frequency drive for precise motor speed control.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Motor Control</span>
+                                <span class="project-tag">Power Electronics</span>
+                                <span class="project-tag">Energy Efficiency</span>
+                            </div>
+                            <a href="#project3" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>(+880) 1786847942</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>mehedi.himel5@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🏠</div>
+                        <h3>Address</h3>
+                        <p>College More, Nageshwari, Kurigram, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <h3>About Me</h3>
+                        <p>Electrical & Electronic Engineer specializing in power systems, renewable energy, and smart grid technologies. Passionate about innovative engineering solutions.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Info</h3>
+                        <p>College More, Nageshwari, Kurigram, Bangladesh</p>
+                        <p>mehedi.himel5@gmail.com</p>
+                        <p>(+880) 1786847942</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Md. Mehedi Hasan Himel. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <div class="section">
-      <h2>Educational Qualifications</h2>
-      <ul>
-        <li class="center-align"><strong>SSC</strong>: Nageshwari D.M Academy (2015)</li>
-        <li class="center-align"><strong>HSC</strong>: Nageshwari Govt. College (2017)</li>
-        <li class="center-align"><strong>Graduation</strong>: B.Sc (Engg) in Electrical & Electronic Engineering (EEE), RUET (2021)</li>
-      </ul>
-    </div>
+    <!-- About Page -->
+    <div id="about-page" style="display: none;">
+        <header>
+            <nav class="container">
+                <a href="#home" class="logo">Himel<span>.</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="section">
-      <h2>Professional Details</h2>
-      <ul>
-        <li class="center-align"><strong>Occupation</strong>: Assistant Engineer (Electrical)</li>
-        <li class="center-align"><strong>Company</strong>: Jalalabad Gas Transmission & Distribution System Ltd. (JGTDSL)</li>
-        <li class="center-align"><strong>Work Location</strong>: Sreemangal, Moulovibazar, Sylhet</li>
-      </ul>
-    </div>
+        <section class="page-header">
+            <div class="container">
+                <h1>About Me</h1>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </section>
 
-    <div class="section">
-      <h2>Family Details</h2>
-      <ul>
-        <li class="center-align"><strong>Father</strong>: Md. Rafiqul Islam - Assistant Professor, Bhitaband Degree College</li>
-        <li class="center-align"><strong>Mother</strong>: Most. Hasina Parvin - Assistant Teacher, Berubari Girls High School</li>
-        <li class="center-align"><strong>Siblings</strong>: One younger sister</li>
-        <li class="center-align"><strong>Location</strong>: Nageshwari, Kurigram</li>
-      </ul>
-    </div>
+        <section class="section-padding">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mehedi Hasan Himel">
+                    </div>
+                    <div class="about-text">
+                        <h3>Professional Profile</h3>
+                        <p>I am Md. Mehedi Hasan Himel, an Electrical & Electronic Engineer with a B.Sc. degree from Rajshahi University of Engineering & Technology (RUET). I graduated with a CGPA of 3.52 on a scale of 4.00.</p>
+                        <p>Currently, I am working as an Assistant Engineer (Electrical) at Jalalabad Gas Transmission & Distribution System Ltd. in Sylhet, Bangladesh, where I design, implement, and maintain electrical systems for gas transmission and distribution infrastructure.</p>
+                        <p>My academic journey includes outstanding achievements such as Dean's List recognition at RUET, ranking 36th in the RUET Entrance Examination, and securing top positions in both HSC and SSC examinations under Dinajpur Board.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p class="center-align"><strong>Personality:</strong> I’m a calm, empathetic, and optimistic person who believes in honest conversations and shared dreams. I value mutual respect, freedom, and building a life that supports both partners equally.</p>
-      <p><strong>Life Style:</strong></p>
-      <ul>
-        <li>Non-smoker</li>
-        <li>Non-drinker</li>
-      </ul>
-    </div>
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education & Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 - Present</div>
+                            <h3>Assistant Engineer (Electrical)</h3>
+                            <p>Jalalabad Gas Transmission & Distribution System Ltd., Sylhet, Bangladesh</p>
+                            <ul>
+                                <li>Design, implement, and maintain electrical systems for gas transmission and distribution infrastructure</li>
+                                <li>Oversee installation, commissioning, and maintenance of electrical equipment</li>
+                                <li>Troubleshoot and resolve electrical issues</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <h3>B.Sc. in Electrical & Electronic Engineering</h3>
+                            <p>Rajshahi University of Engineering & Technology (RUET)</p>
+                            <p>CGPA: 3.52/4.00</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022</div>
+                            <h3>Industrial Training</h3>
+                            <p>Bangladesh Power Development Board (BPDB), Ghorashal, Narshingdi</p>
+                            <ul>
+                                <li>Learned about power generation principles and power plant components</li>
+                                <li>Studied power plant maintenance and safety procedures</li>
+                                <li>Gained knowledge about power system protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2017</div>
+                            <h3>HSC in Science Group</h3>
+                            <p>Nageshwari College, Kurigram</p>
+                            <p>GPA: 5.00/5.00</p>
+                            <p>Rank: 19th under Dinajpur Board</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2015</div>
+                            <h3>SSC in Science Group</h3>
+                            <p>Nageswari Doyamoyee Pilot Academy, Kurigram</p>
+                            <p>GPA: 5.00/5.00</p>
+                            <p>Rank: 1st under Dinajpur Board</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="section">
-      <h2>Hobbies & Interests</h2>
-      <ul>
-        <li class="center-align">Listening to music – especially old and modern Hindi and Bengali songs</li>
-        <li class="center-align">Travelling to the mountains and exploring nature</li>
-        <li class="center-align">Cooking and experimenting with new recipes</li>
-        <li class="center-align">Watching movies and web series – mostly romantic, thriller, and feel-good genres</li>
-        <li class="center-align">Exploring cafés, street food, and local cuisines during travel</li>
-        <li class="center-align">Photography – mostly nature, travel, and candid moments</li>
-        <li class="center-align">Spending quality time with family and close friends</li>
-      </ul>
-    </div>
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Programming Languages</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <p style="margin-top: 5px; color: #666;">C (Proficient), C++ (Intermediate), Python (Beginner)</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Software & Tools</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <p style="margin-top: 5px; color: #666;">MS Office (Advanced), Visio (Proficient), MATLAB (Advanced), Pspice (Proficient), NI Multisim (Intermediate), Autocad (Proficient), Arduino IDE, Logosoft Comfort, Simatic Manager for PLC, Latex</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Specialized Knowledge</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <p style="margin-top: 5px; color: #666;">Electrical & Electronic Circuit Simulation, Engineering Drawing, PLC, Power System Simulation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="section">
-      <h2>Partner Expectations</h2>
-      <ul>
-        <li class="center-align">Looking for a decent, humble, well-educated, kind-hearted, and responsible individual</li>
-        <li class="center-align">Someone who values family, relationships, and mutual respect</li>
-        <li class="center-align">Preferably someone with a positive outlook on life and a good sense of humor</li>
-        <li class="center-align">Open-minded</strong> yet rooted in values and traditions</li>
-        <li class="center-align">A good communicator who believes in understanding and emotional support</li>
-        <li class="center-align">Supportive of personal growth, hobbies, and shared dreams</li>
-        <li class="center-align">A life partner who believes in growing together through every phase of life</li>
-      </ul>
-    </div>
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Language Proficiency</h2>
+                </div>
+                <table class="language-table">
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Reading</th>
+                            <th>Writing</th>
+                            <th>Speaking</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bangla</td>
+                            <td class="rating">Excellent</td>
+                            <td class="rating">Excellent</td>
+                            <td class="rating">Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td class="rating">Excellent</td>
+                            <td class="rating">Excellent</td>
+                            <td class="rating">Good</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <div class="section">
-      <h2>Additional Information</h2>
-      <ul>
-        <li class="center-align">As the only son of my parents, I carry the responsibility of their care and well-being, along with that of my sibling. I am looking for a partner who understands the value of family and is willing to be a part of a loving, supportive household.</li>
-        <li class="center-align">I am open to a working partner. I deeply respect ambition and will always support your career choices, dreams, and even a career break if that’s what you wish at any point in life.</li>
-        <li class="center-align">I have an open-minded approach towards religion. I enjoy celebrating festivals with warmth and joy, but I don’t believe in imposing any religious practices.</li>
-        <li class="center-align">I do not have any past relationship.</li>
-        <li class="center-align">My long-term plan is to settle in Bangladesh. I do not have plans to settle abroad, though I’m open to life’s possibilities if something exciting comes our way together.</li>
-        <li class="center-align">I am not a pet lover and would prefer a pet-free home environment.</li>
-      </ul>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <h3>About Me</h3>
+                        <p>Electrical & Electronic Engineer specializing in power systems, renewable energy, and smart grid technologies.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Info</h3>
+                        <p>College More, Nageshwari, Kurigram, Bangladesh</p>
+                        <p>mehedi.himel5@gmail.com</p>
+                        <p>(+880) 1786847942</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Md. Mehedi Hasan Himel. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-<div class="section">
-  <h2>Contact Information</h2>
-  <ul>
-    <li><strong>Phone:</strong> <a href="tel:/01786847942" target="_blank">01786847942</a></li>
-    <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801786847942" target="_blank">01786847942</a></li>
-    <li><strong>Email:</strong> <a href="mailto:mehedi.himel5@email.com" target="_blank">mehedi.himel5@email.com</a></li> 
-    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mehedi.hasan.himel?igsh=MTJ3NnM3aGV1eWw1Yg==" target="_blank">instagram.com/mehedi.hasan.himel</a></li>
-  </ul>
-</div>
-
-    <div class="footer">
-      <p>Thanks for considering my profile</p>
-    </div>
-  </div>
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
-</body>
-</html>
